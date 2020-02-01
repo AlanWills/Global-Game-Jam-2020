@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b4c596cc8d95d94cb059d91adda3b41, type: 3}
-  m_Name: Flower
+  m_Script: {fileID: 11500000, guid: 4286679b41df0f845aae06da31fa8f4e, type: 3}
+  m_Name: CollectableManager
   m_EditorClassIdentifier: 
-  displayName: Flower
+  collectables:
+  - {fileID: 11400000, guid: 745f8e09a015c0147888ed6b8826cbcf, type: 2}
