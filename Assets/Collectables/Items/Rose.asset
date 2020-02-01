@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b4c596cc8d95d94cb059d91adda3b41, type: 3}
-  m_Name: Flower
+  m_Name: Rose
   m_EditorClassIdentifier: 
-  displayName: Flower
+  displayName: Rose
   icon: {fileID: 21300000, guid: ec81e8e2da0a5f5409ff3af863affabe, type: 3}
   prefab: {fileID: 838018363471357787, guid: a18501fe2eb4d004bacc601964fbcfa3, type: 3}

@@ -9,9 +9,6 @@ namespace Celeste.Collectables
         #region Serialized Fields
 
         [SerializeField]
-        private string displayName;
-
-        [SerializeField]
         private Sprite icon;
 
         [SerializeField]
