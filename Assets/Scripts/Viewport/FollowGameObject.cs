@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Celeste.Viewport
 {
-    [AddComponentMenu("Celeste/Follow Game Object")]
+    [AddComponentMenu("Celeste/Viewport/Follow Game Object")]
     public class FollowGameObject : MonoBehaviour
     {
         #region Serialized Fields
