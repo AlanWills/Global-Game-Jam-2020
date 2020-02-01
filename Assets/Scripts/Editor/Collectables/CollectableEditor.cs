@@ -4,8 +4,7 @@ using UnityEditor;
 
 namespace CelesteEditor.Collectables
 {
-	[CustomEditor(typeof(Collectable))]
-	public class CollectableEditor : Editor
+	public class CollectableEditor
 	{
         #region Component Menu Creation
 
