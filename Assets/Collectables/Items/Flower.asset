@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Flower
   m_EditorClassIdentifier: 
   displayName: Flower
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: ec81e8e2da0a5f5409ff3af863affabe, type: 3}
   prefab: {fileID: 838018363471357787, guid: a18501fe2eb4d004bacc601964fbcfa3, type: 3}

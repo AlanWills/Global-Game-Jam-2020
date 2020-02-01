@@ -30,9 +30,9 @@ namespace Celeste.Collectables
 
         #region Instantiation
 
-        public GameObject Instantiate()
+        public GameObject Instantiate(Transform parent = null)
         {
-            return GameObject.Instantiate(prefab);
+            return GameObject.Instantiate(prefab, parent);
         }
 
         #endregion

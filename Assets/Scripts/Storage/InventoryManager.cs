@@ -18,6 +18,9 @@ namespace Celeste.Storage
         private Inventory inventory;
 
         [SerializeField]
+        private Transform inventoryRoot;
+
+        [SerializeField]
         private GameObject inventoryItemPrefab;
 
         private Dictionary<Collectable, GameObject> itemGameObjects = new Dictionary<Collectable, GameObject>();
@@ -29,7 +32,7 @@ namespace Celeste.Storage
         public void AddToInventory(Collectable collectable)
         {
             inventory.AddToInventory(collectable);
-            GameObject itemPrefab = GameObject.Instantiate(inventoryItemPrefab);
+            GameObject itemPrefab = GameObject.Instantiate(inventoryItemPrefab, inventoryRoot);
             itemPrefab.GetComponent<Image>().sprite = collectable.Icon;
         }
 

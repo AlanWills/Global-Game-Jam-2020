@@ -18,6 +18,9 @@ namespace Celeste.Collectables
         [SerializeField]
         private List<Collectable> initialCollectables = new List<Collectable>();
 
+        [SerializeField]
+        private Transform worldRoot;
+
         private Dictionary<Collectable, GameObject> collectableGameObjects = new Dictionary<Collectable, GameObject>();
 
         #endregion
@@ -71,7 +74,7 @@ namespace Celeste.Collectables
 
         public void AddCollectable(Collectable collectable)
         {
-            collectableGameObjects.Add(collectable, collectable.Instantiate());
+            collectableGameObjects.Add(collectable, collectable.Instantiate(worldRoot));
         }
 
         public void RemoveCollectable(Collectable collectable)

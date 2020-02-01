@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 24488890}
   - component: {fileID: 24488889}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: GUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262,12 +262,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148052558}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -194.35144, y: -476.7319, z: 50.060005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1013918672}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &148052561
 SpriteRenderer:
@@ -402,6 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: efacaa42b5c5b214bb79698c6e7d734d, type: 2}
+  inventoryRoot: {fileID: 172164658}
   inventoryItemPrefab: {fileID: 1372827887219741946, guid: 51ea74d9dcba08940977de31db27d817,
     type: 3}
 --- !u!1 &172164657
@@ -417,7 +418,7 @@ GameObject:
   - component: {fileID: 172164659}
   - component: {fileID: 172164661}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: InventoryRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -663,7 +664,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectableManager: {fileID: 1635888091}
-  inventoryManager: {fileID: 0}
+  inventoryManager: {fileID: 167992567}
+--- !u!1 &1013918671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1013918672}
+  m_Layer: 0
+  m_Name: World
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1013918672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013918671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 194.35144, y: 476.7319, z: -50.060005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 148052560}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1219994000
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,4 +805,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4286679b41df0f845aae06da31fa8f4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialCollectables: []
+  initialCollectables:
+  - {fileID: 11400000, guid: 745f8e09a015c0147888ed6b8826cbcf, type: 2}
+  worldRoot: {fileID: 0}
