@@ -27,12 +27,14 @@ namespace Celeste.Input
 
         public void Update()
         {
-            float horizontalDelta = UnityEngine.Input.GetAxis(horizontalAxis);
-            float verticalDelta = UnityEngine.Input.GetAxis(verticalAxis);
+            float horizontalDelta = UnityEngine.Input.GetAxisRaw(horizontalAxis);
+            float verticalDelta = UnityEngine.Input.GetAxisRaw(verticalAxis);
 
             if (horizontalDelta != 0 || verticalDelta != 0)
             {
-                transform.Translate(horizontalDelta * speed, verticalDelta * speed, 0);
+                Vector3 delta = new Vector3(horizontalDelta, verticalDelta, 0);
+                delta.Normalize();
+                transform.Translate(delta * speed);
             }
         }
 
