@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 1005086471}
   - component: {fileID: 1005086474}
   - component: {fileID: 1005086473}
-  - component: {fileID: 1005086472}
   - component: {fileID: 1005086475}
   m_Layer: 5
   m_Name: BrokenHeartRight
@@ -148,34 +147,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005086470}
-  m_LocalRotation: {x: 0, y: 0, z: -0.17364825, w: 0.9848078}
+  m_LocalRotation: {x: 0, y: 0, z: -0.078459024, w: 0.99691737}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1870262704}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -9}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40, y: -8}
+  m_AnchoredPosition: {x: 34, y: -3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1005086472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005086470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb35d2b2c14ed564d8f3223a1831de12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 1005086473}
-  target: 0
-  delay: 3
-  duration: 3
 --- !u!114 &1005086473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,9 +204,9 @@ Animation:
   m_GameObject: {fileID: 1005086470}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 74a1a9caf40f59646a738a2eb62f1040, type: 2}
+  m_Animation: {fileID: 7400000, guid: 5c5b85f2b3400fd4dab55d96268b4aa7, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 74a1a9caf40f59646a738a2eb62f1040, type: 2}
+  - {fileID: 7400000, guid: 5c5b85f2b3400fd4dab55d96268b4aa7, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -422,7 +405,6 @@ GameObject:
   - component: {fileID: 1808234992}
   - component: {fileID: 1808234994}
   - component: {fileID: 1808234993}
-  - component: {fileID: 1808234995}
   - component: {fileID: 1808234996}
   m_Layer: 5
   m_Name: BrokenHeartLeft
@@ -438,16 +420,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808234991}
-  m_LocalRotation: {x: 0, y: 0, z: 0.1564345, w: 0.98768836}
+  m_LocalRotation: {x: 0, y: 0, z: 0.06975647, w: 0.9975641}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1870262704}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40, y: -5}
+  m_AnchoredPosition: {x: -33, y: -2}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1808234993
@@ -486,22 +468,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1808234991}
   m_CullTransparentMesh: 0
---- !u!114 &1808234995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1808234991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb35d2b2c14ed564d8f3223a1831de12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 1808234993}
-  target: 0
-  delay: 3
-  duration: 3
 --- !u!111 &1808234996
 Animation:
   m_ObjectHideFlags: 0
@@ -511,9 +477,9 @@ Animation:
   m_GameObject: {fileID: 1808234991}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 29b8234e8b12fe14e94482c6c3a6fd18, type: 2}
+  m_Animation: {fileID: 7400000, guid: 6b5d2797f145f6f4a96583e42ed2a328, type: 2}
   m_Animations:
-  - {fileID: 7400000, guid: 29b8234e8b12fe14e94482c6c3a6fd18, type: 2}
+  - {fileID: 7400000, guid: 6b5d2797f145f6f4a96583e42ed2a328, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
