@@ -1,5 +1,5 @@
 ﻿using Celeste.Commands;
-using Celeste.Commands.Colllectables;
+using Celeste.Commands.Collectables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +25,8 @@ namespace Celeste.Collectables
         {
             if (UnityEngine.Input.GetKeyDown(collectionKey))
             {
-                CommandManager.QueueCommand(new TryCollectItems(this));
+                Debug.Log("TryCollectItems");
+                CommandManager.QueueCommand(new TryCollectCollectables(this));
             }
         }
 

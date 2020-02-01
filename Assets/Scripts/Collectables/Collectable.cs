@@ -12,18 +12,27 @@ namespace Celeste.Collectables
         private string displayName;
 
         [SerializeField]
-        private Texture2D texture;
+        private Sprite icon;
 
         [SerializeField]
-        private GameObject gameObject;
+        private GameObject prefab;
 
         #endregion
 
-        #region Collection Methods
+        #region Properties and Fields
 
-        public bool CanBeCollected(Collector collector)
+        public Sprite Icon
         {
-            return gameObject.GetComponent<Collider2D>().Distance(collector.GetComponent<Collider2D>()).isOverlapped;
+            get { return icon; }
+        }
+
+        #endregion
+
+        #region Instantiation
+
+        public GameObject Instantiate()
+        {
+            return GameObject.Instantiate(prefab);
         }
 
         #endregion

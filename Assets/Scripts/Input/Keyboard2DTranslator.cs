@@ -13,10 +13,10 @@ namespace Celeste.Input
         #region Serialized Fields
 
         [SerializeField]
-        private string horizontalAxis;
+        private string horizontalAxis = "Horizontal";
 
         [SerializeField]
-        private string verticalAxis;
+        private string verticalAxis = "Vertical";
 
         [SerializeField]
         private float speed = 1;
@@ -30,7 +30,7 @@ namespace Celeste.Input
             float horizontalDelta = UnityEngine.Input.GetAxis(horizontalAxis);
             float verticalDelta = UnityEngine.Input.GetAxis(verticalAxis);
 
-            if (horizontalDelta > 0 || verticalDelta > 0)
+            if (horizontalDelta != 0 || verticalDelta != 0)
             {
                 transform.Translate(horizontalDelta * speed, verticalDelta * speed, 0);
             }

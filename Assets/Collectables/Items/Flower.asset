@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Flower
   m_EditorClassIdentifier: 
   displayName: Flower
-  texture: {fileID: 0}
-  gameObject: {fileID: 838018363471357787, guid: a18501fe2eb4d004bacc601964fbcfa3,
-    type: 3}
+  icon: {fileID: 0}
+  prefab: {fileID: 838018363471357787, guid: a18501fe2eb4d004bacc601964fbcfa3, type: 3}

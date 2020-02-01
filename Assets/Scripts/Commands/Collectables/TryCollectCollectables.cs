@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Celeste.Commands.Colllectables
+namespace Celeste.Commands.Collectables
 {
-    public class TryCollectItems : ICollectableCommand
+    public class TryCollectCollectables : ICollectableCommand
     {
         #region Properties and Fields
 
@@ -16,7 +16,7 @@ namespace Celeste.Commands.Colllectables
 
         #endregion
 
-        public TryCollectItems(Collector collector)
+        public TryCollectCollectables(Collector collector)
         {
             this.collector = collector;
         }
@@ -25,12 +25,12 @@ namespace Celeste.Commands.Colllectables
 
         public bool CanExecute(CollectableManager collectableManager)
         {
-            return collectableManager.CanCollectItems(collector);
+            return collectableManager.CanCollectCollectables(collector);
         }
 
         public void Execute(CollectableManager collectableManager)
         {
-            collectableManager.CollectItems(collector);
+            collectableManager.CollectCollectables(collector);
         }
 
         #endregion
