@@ -52,12 +52,16 @@ namespace Celeste.GraphicalFX
             while (currentTime <= duration)
             {
                 Color color = image.color;
-                color.a = Mathf.Lerp(startValue, target, currentTime);
+                color.a = Mathf.Lerp(startValue, target, currentTime / duration);
                 image.color = color;
                 currentTime += Time.deltaTime;
 
                 yield return null;
             }
+
+            Color finalColor = image.color;
+            finalColor.a = target;
+            image.color = finalColor;
         }
 
         #endregion
