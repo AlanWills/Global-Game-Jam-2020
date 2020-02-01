@@ -1,7 +1,9 @@
 ﻿using Celeste.Collectables;
 using Celeste.Commands.Collectables;
 using Celeste.Commands.Storage;
+using Celeste.Commands.UI;
 using Celeste.Storage;
+using CelesteEngine.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +26,9 @@ namespace Celeste.Commands
         private List<IInventoryCommand> queuedInventoryCommands = new List<IInventoryCommand>();
         private List<IInventoryCommand> inventoryCommands = new List<IInventoryCommand>();
 
+        private List<IUICommand> queuedUICommands = new List<IUICommand>();
+        private List<IUICommand> uiCommands = new List<IUICommand>();
+
         #endregion
 
         #region Serialized Fields
@@ -33,6 +38,9 @@ namespace Celeste.Commands
 
         [SerializeField]
         private InventoryManager inventoryManager;
+
+        [SerializeField]
+        private UIManager uiManager;
 
         #endregion
 
@@ -47,6 +55,7 @@ namespace Celeste.Commands
         {
             UpdateCollectableCommands();
             UpdateInventoryCommands();
+            UpdateUICommands();
         }
 
         #endregion
@@ -106,6 +115,31 @@ namespace Celeste.Commands
             }
 
             inventoryCommands.Clear();
+        }
+
+        #endregion
+
+        #region UI Command Methods
+
+        public static void QueueCommand(IUICommand uiCommand)
+        {
+            QueueCommand(uiCommand, instance.queuedUICommands);
+        }
+
+        private void UpdateUICommands()
+        {
+            uiCommands.AddRange(queuedUICommands);
+            queuedUICommands.Clear();
+
+            foreach (IUICommand command in uiCommands)
+            {
+                if (command.CanExecute(uiManager))
+                {
+                    command.Execute(uiManager);
+                }
+            }
+
+            uiCommands.Clear();
         }
 
         #endregion
