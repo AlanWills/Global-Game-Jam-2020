@@ -1,15 +1,15 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Celeste.Collectables
+namespace Celeste.Reactions
 {
-    public class Collectable : ScriptableObject
+    public class Reaction : ScriptableObject
     {
         #region Serialized Fields
-
-        [SerializeField]
-        private string displayName;
 
         [SerializeField]
         private Texture2D texture;
