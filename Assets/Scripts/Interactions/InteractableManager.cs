@@ -1,4 +1,5 @@
-﻿using Celeste.Reactions;
+﻿using Celeste.Audio;
+using Celeste.Reactions;
 using Celeste.Storage;
 using System;
 using System.Collections.Generic;
@@ -75,6 +76,7 @@ namespace Celeste.Interactions
                 if (CanInteract(interactableGameObject.Value, interactor))
                 {
                     interactableGameObject.Key.Interact(this, inventoryManager);
+                    AudioManager.PlayBeep();
                 }
             }
         }

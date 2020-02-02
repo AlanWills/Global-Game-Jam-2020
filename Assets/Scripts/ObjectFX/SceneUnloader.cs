@@ -15,6 +15,9 @@ namespace Celeste.ObjectFX
         #region Serialized Fields
 
         [SerializeField]
+        private string sceneName = "";
+
+        [SerializeField]
         private float delay = 1;
 
         #endregion
@@ -37,7 +40,7 @@ namespace Celeste.ObjectFX
                 yield return new WaitForSeconds(delay);
             }
 
-            SceneManager.UnloadSceneAsync(gameObject.scene);
+            SceneManager.UnloadSceneAsync(string.IsNullOrEmpty(sceneName) ? gameObject.scene.name : sceneName);
         }
 
         #endregion
