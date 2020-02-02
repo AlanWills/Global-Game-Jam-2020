@@ -9006,7 +9006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4265ebe296d1ee4c9bfe9cf1d12255e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressBarForeground: {fileID: 0}
+  progressBarForeground: {fileID: 425101179}
 --- !u!1 &825122728
 GameObject:
   m_ObjectHideFlags: 0
@@ -12205,6 +12205,11 @@ MonoBehaviour:
   initialInteractables:
   - {fileID: 11400000, guid: 3ac419108c46a144fa6d8257215cb617, type: 2}
   - {fileID: 11400000, guid: fd801893ebf890144a92cc6b884eff00, type: 2}
+  - {fileID: 11400000, guid: 8877e3c61e2c3994cba47eed7c50f960, type: 2}
+  - {fileID: 11400000, guid: 1e7985fbd58703640895210921ee8e52, type: 2}
+  - {fileID: 11400000, guid: 3e1b430cf1ef9c140ac70ff4f3ebd5a1, type: 2}
+  - {fileID: 11400000, guid: 950bb31dd606af84f9fae3a545572692, type: 2}
+  - {fileID: 11400000, guid: e6399949cd6ec294095ae08005bd1557, type: 2}
   worldRoot: {fileID: 1013918672}
 --- !u!1 &1130014830
 GameObject:
@@ -18282,7 +18287,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialCollectables:
-  - {fileID: 11400000, guid: 745f8e09a015c0147888ed6b8826cbcf, type: 2}
   - {fileID: 11400000, guid: c72a366b2d4318047868171a2b904055, type: 2}
   - {fileID: 11400000, guid: fa1735e00a7de9c4dadbe97549b8e780, type: 2}
   worldRoot: {fileID: 1013918672}

@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32260e3b4ced5f4429e4de38c483f2b5, type: 3}
-  m_Name: HasInventoryItem
+  m_Script: {fileID: 11500000, guid: ff25b510c1c95b74a8bee546019d43f8, type: 3}
+  m_Name: RemoveSickGuyInteractable
   m_EditorClassIdentifier: 
-  collectable: {fileID: 11400000, guid: 124d9550b9d81e84b8927ac8418e0fce, type: 2}
+  interactable: {fileID: 11400000, guid: 3e1b430cf1ef9c140ac70ff4f3ebd5a1, type: 2}
+  destroyGameObject: 0

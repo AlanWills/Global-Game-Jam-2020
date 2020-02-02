@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff25b510c1c95b74a8bee546019d43f8, type: 3}
+  m_Name: RemoveRoseInteractable
+  m_EditorClassIdentifier: 
+  interactable: {fileID: 11400000, guid: 8877e3c61e2c3994cba47eed7c50f960, type: 2}

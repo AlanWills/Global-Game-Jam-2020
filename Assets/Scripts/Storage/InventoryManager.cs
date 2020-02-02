@@ -43,6 +43,7 @@ namespace Celeste.Storage
             inventory.AddToInventory(collectable);
             GameObject itemPrefab = GameObject.Instantiate(inventoryItemPrefab, inventoryRoot);
             itemPrefab.GetComponent<Image>().sprite = collectable.Icon;
+            itemGameObjects.Add(collectable, itemPrefab);
         }
 
         public bool HasInventoryItem(Collectable collectable)

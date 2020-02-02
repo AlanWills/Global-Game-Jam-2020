@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb62f17ab6dfd874db51cc91ffb94a45, type: 3}
+  m_Name: SickGuy
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 6809988549086619887, guid: 62d03d83e39886b4cb2bdc7b27071e1e, type: 3}
+  requirementsFailedReaction: {fileID: 11400000, guid: b5413e44fab82314a9dfd659d8037dd5,
+    type: 2}
+  requirements:
+  - {fileID: 11400000, guid: 0391a767e5e5ff94b8e50b72f7505fa4, type: 2}
+  effects:
+  - {fileID: 11400000, guid: 1df88054dc2ccac44a442c3ea80b466c, type: 2}
+  - {fileID: 11400000, guid: df45e7eb75ebe19448ec0ef0caf68e9f, type: 2}
+  - {fileID: 11400000, guid: 0ccf8973efd39c743a9659a38edfede5, type: 2}
+  - {fileID: 11400000, guid: 38317e4d058d2364db5d2552dc4bd436, type: 2}
+  - {fileID: 11400000, guid: bd80b98241cda58489aa8f3fd9bfb1ba, type: 2}

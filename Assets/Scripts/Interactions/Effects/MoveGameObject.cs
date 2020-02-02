@@ -9,23 +9,28 @@ using UnityEngine;
 
 namespace Celeste.Interactions.Effects
 {
-    public class RemoveInteractable : Effect
+    public class MoveGameObject : Effect
     {
         #region Serialized Fields
 
         [SerializeField]
-        private Interactable interactable;
+        private string gameObjectName = "";
 
         [SerializeField]
-        private bool destroyGameObject = true;
+        private Vector3 targetPosition;
 
         #endregion
 
+        #region Effect Implementation
+
         public override IEnumerator Do(InteractableManager interactableManager, InventoryManager inventoryManager)
         {
-            interactableManager.RemoveInteractable(interactable, destroyGameObject);
+            GameObject gameObject = GameObject.Find(gameObjectName);
+            gameObject.transform.localPosition = targetPosition;
 
             return null;
         }
+
+        #endregion
     }
 }

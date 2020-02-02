@@ -84,11 +84,15 @@ namespace Celeste.Interactions
             interactableGameObjects.Add(interactable, interactable.Instantiate(worldRoot));
         }
 
-        public void RemoveInteractable(Interactable interactable)
+        public void RemoveInteractable(Interactable interactable, bool destroyGameObject)
         {
             if (interactableGameObjects.ContainsKey(interactable))
             {
-                GameObject.Destroy(interactableGameObjects[interactable]);
+                if (destroyGameObject)
+                {
+                    GameObject.Destroy(interactableGameObjects[interactable]);
+                }
+
                 interactableGameObjects.Remove(interactable);
             }
         }

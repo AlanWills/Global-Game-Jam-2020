@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dedf94a4a05bda44867c844d91f80c2, type: 3}
-  m_Name: ShowCutscene
+  m_Script: {fileID: 11500000, guid: ee111608e1146e047aa4aebae8ae7602, type: 3}
+  m_Name: RemoveRose
   m_EditorClassIdentifier: 
-  cutscene: Cutscene1
+  collectable: {fileID: 11400000, guid: 745f8e09a015c0147888ed6b8826cbcf, type: 2}

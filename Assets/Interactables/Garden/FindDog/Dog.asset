@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Dog
   m_EditorClassIdentifier: 
   prefab: {fileID: 841766061984787359, guid: 3a78a527faec7cb4a9d1ed875ed104dd, type: 3}
+  requirementsFailedReaction: {fileID: 0}
   requirements: []
   effects:
   - {fileID: 11400000, guid: 3d0129e8d31ce2d45b8b9ae5c81c21c7, type: 2}
+  - {fileID: 11400000, guid: 7763e4d40ab868243a1cab92bae80901, type: 2}
   - {fileID: 11400000, guid: 79126bd54f8379e4188447ef8b9b8314, type: 2}
