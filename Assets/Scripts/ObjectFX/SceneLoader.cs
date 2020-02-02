@@ -36,6 +36,11 @@ namespace Celeste.ObjectFX
 
         #region Scene Loading Methods
 
+        public void LoadSceneInstant()
+        {
+            SceneManager.LoadSceneAsync(sceneName, loadSceneMode);
+        }
+
         public IEnumerator LoadScene()
         {
             if (delay > 0)
