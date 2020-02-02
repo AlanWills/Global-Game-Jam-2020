@@ -2,6 +2,7 @@
 using Celeste.Commands.Collectables;
 using Celeste.Commands.Storage;
 using Celeste.Commands.UI;
+using Celeste.Interactions;
 using Celeste.Storage;
 using CelesteEngine.UI;
 using System;
@@ -26,6 +27,9 @@ namespace Celeste.Commands
         private List<IInventoryCommand> queuedInventoryCommands = new List<IInventoryCommand>();
         private List<IInventoryCommand> inventoryCommands = new List<IInventoryCommand>();
 
+        private List<IInteractableCommand> queuedInteractableCommands = new List<IInteractableCommand>();
+        private List<IInteractableCommand> interactableCommands = new List<IInteractableCommand>();
+
         private List<IUICommand> queuedUICommands = new List<IUICommand>();
         private List<IUICommand> uiCommands = new List<IUICommand>();
 
@@ -38,6 +42,9 @@ namespace Celeste.Commands
 
         [SerializeField]
         private InventoryManager inventoryManager;
+
+        [SerializeField]
+        private InteractableManager interactableManager;
 
         [SerializeField]
         private UIManager uiManager;
@@ -55,6 +62,7 @@ namespace Celeste.Commands
         {
             UpdateCollectableCommands();
             UpdateInventoryCommands();
+            UpdateInteractableCommands();
             UpdateUICommands();
         }
 
@@ -115,6 +123,31 @@ namespace Celeste.Commands
             }
 
             inventoryCommands.Clear();
+        }
+
+        #endregion
+
+        #region Collectable Command Methods
+
+        public static void QueueCommand(IInteractableCommand interactableCommand)
+        {
+            QueueCommand(interactableCommand, instance.queuedInteractableCommands);
+        }
+
+        private void UpdateInteractableCommands()
+        {
+            interactableCommands.AddRange(queuedInteractableCommands);
+            queuedInteractableCommands.Clear();
+
+            foreach (IInteractableCommand command in interactableCommands)
+            {
+                if (command.CanExecute(interactableManager))
+                {
+                    command.Execute(interactableManager);
+                }
+            }
+
+            interactableCommands.Clear();
         }
 
         #endregion

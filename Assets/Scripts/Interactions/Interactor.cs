@@ -1,5 +1,5 @@
 ﻿using Celeste.Commands;
-using Celeste.Commands.Collectables;
+using Celeste.Commands.Interactables;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,15 +7,15 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Celeste.Collectables
+namespace Celeste.Interactions
 {
-    [RequireComponent(typeof(Collider2D))]
-    public class Collector : MonoBehaviour
+    [AddComponentMenu("Celeste/Interactions/Interactor")]
+    public class Interactor : MonoBehaviour
     {
         #region Serialized Fields
 
         [SerializeField]
-        private KeyCode collectionKey;
+        private KeyCode interactKey;
 
         #endregion
 
@@ -23,9 +23,9 @@ namespace Celeste.Collectables
 
         public void Update()
         {
-            if (UnityEngine.Input.GetKeyDown(collectionKey))
+            if (UnityEngine.Input.GetKeyDown(interactKey))
             {
-                CommandManager.QueueCommand(new TryCollectCollectables(this));
+                CommandManager.QueueCommand(new TryInteractWithInteractables(this));
             }
         }
 

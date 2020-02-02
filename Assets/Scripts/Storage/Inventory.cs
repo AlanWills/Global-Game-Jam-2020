@@ -23,6 +23,11 @@ namespace Celeste.Storage
             items.Add(collectable);
         }
 
+        public bool HasItem(Collectable collectable)
+        {
+            return items.Exists(x => x == collectable);
+        }
+
         #endregion
     }
 }

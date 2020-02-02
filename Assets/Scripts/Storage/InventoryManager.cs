@@ -36,6 +36,11 @@ namespace Celeste.Storage
             itemPrefab.GetComponent<Image>().sprite = collectable.Icon;
         }
 
+        public bool HasInventoryItem(Collectable collectable)
+        {
+            return inventory.HasItem(collectable);
+        }
+
         #endregion
     }
 }
