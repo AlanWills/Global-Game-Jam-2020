@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb62f17ab6dfd874db51cc91ffb94a45, type: 3}
-  m_Name: BoyLover
+  m_Name: PickUpCup
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6809988549086619887, guid: 0db31229a97e8f348b15c6a7a3a91e3e, type: 3}
-  requirementsFailedReaction: {fileID: 11400000, guid: b7cf66e834dad8f4d96a298ce89b2fb7,
-    type: 2}
-  requirements:
-  - {fileID: 11400000, guid: 088398b9771d05b48960a18707dd3346, type: 2}
+  prefab: {fileID: 838018363471357787, guid: bd82dc2d800a75a4c97afb0e9a0645f3, type: 3}
+  requirementsFailedReaction: {fileID: 0}
+  requirements: []
   effects:
-  - {fileID: 11400000, guid: 8550b3a891233614295bf976d9492116, type: 2}
+  - {fileID: 11400000, guid: 8d64e1431a3fb994bbfed330ab6225f0, type: 2}
+  - {fileID: 11400000, guid: 67d07dc36166f9049b61cb447b54d148, type: 2}
+  - {fileID: 11400000, guid: 269bdd1d1d508df4583e479f3d090fe6, type: 2}

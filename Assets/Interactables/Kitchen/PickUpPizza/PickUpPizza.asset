@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb62f17ab6dfd874db51cc91ffb94a45, type: 3}
-  m_Name: BoyLover
+  m_Name: PickUpPizza
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6809988549086619887, guid: 0db31229a97e8f348b15c6a7a3a91e3e, type: 3}
-  requirementsFailedReaction: {fileID: 11400000, guid: b7cf66e834dad8f4d96a298ce89b2fb7,
-    type: 2}
-  requirements:
-  - {fileID: 11400000, guid: 088398b9771d05b48960a18707dd3346, type: 2}
+  prefab: {fileID: 527423628864066459, guid: e7da1134ce95c3949970be8c7d04b287, type: 3}
+  requirementsFailedReaction: {fileID: 0}
+  requirements: []
   effects:
-  - {fileID: 11400000, guid: 8550b3a891233614295bf976d9492116, type: 2}
+  - {fileID: 11400000, guid: b0a626c423372b24494786aac7a73a33, type: 2}
+  - {fileID: 11400000, guid: 11476abcab643b445b9c20b6dfcc1624, type: 2}
+  - {fileID: 11400000, guid: ad065db04914bec4cac42b48abc03c7c, type: 2}

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffce0a729447e854b89b58d6659c727a, type: 3}
-  m_Name: ShowInteractableReaction
+  m_Name: FillCupReaction
   m_EditorClassIdentifier: 
-  interactable: {fileID: 11400000, guid: e6399949cd6ec294095ae08005bd1557, type: 2}
-  reaction: {fileID: 11400000, guid: 3988f90c5327388409440ae59db42885, type: 2}
+  interactable: {fileID: 11400000, guid: 1993c763db17fd84f82beaa8f5765bfb, type: 2}
+  reaction: {fileID: 11400000, guid: dea24ec690a863f4e846feefa1fb8b29, type: 2}
