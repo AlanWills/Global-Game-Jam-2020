@@ -34,7 +34,7 @@ namespace Celeste.Input
             {
                 Vector3 delta = new Vector3(horizontalDelta, verticalDelta, 0);
                 delta.Normalize();
-                transform.Translate(delta * speed);
+                transform.Translate(delta * speed * Time.deltaTime);
             }
         }
 

@@ -1883,7 +1883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalAxis: Horizontal
   verticalAxis: Vertical
-  speed: 0.1
+  speed: 5
 --- !u!4 &148052560
 Transform:
   m_ObjectHideFlags: 0
@@ -13544,7 +13544,7 @@ Transform:
   m_GameObject: {fileID: 1047718027}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 0.05, y: 0.21, z: 0}
-  m_LocalScale: {x: 1.669992, y: 1, z: 1}
+  m_LocalScale: {x: 1.83, y: 1, z: 1}
   m_Children:
   - {fileID: 1030183972}
   m_Father: {fileID: 7666215}
@@ -13588,7 +13588,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c75e946834cf2894384d0625b99e6fbc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
