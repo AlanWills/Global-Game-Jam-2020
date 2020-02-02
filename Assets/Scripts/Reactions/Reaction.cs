@@ -12,7 +12,16 @@ namespace Celeste.Reactions
         #region Serialized Fields
 
         [SerializeField]
-        private Texture2D texture;
+        private Sprite sprite;
+
+        #endregion
+
+        #region Properties and Fields
+
+        public Sprite Sprite
+        {
+            get { return sprite; }
+        }
 
         #endregion
     }

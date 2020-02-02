@@ -27,6 +27,15 @@ namespace Celeste.Storage
 
         #endregion
 
+        #region Unity Methods
+
+        public void Start()
+        {
+            inventory.Clear();
+        }
+
+        #endregion
+
         #region Inventory Management Methods
 
         public void AddToInventory(Collectable collectable)
@@ -39,6 +48,17 @@ namespace Celeste.Storage
         public bool HasInventoryItem(Collectable collectable)
         {
             return inventory.HasItem(collectable);
+        }
+
+        public void RemoveInventoryItem(Collectable collectable)
+        {
+            inventory.RemoveItem(collectable);
+
+            if (itemGameObjects.ContainsKey(collectable))
+            {
+                GameObject.Destroy(itemGameObjects[collectable]);
+                itemGameObjects.Remove(collectable);
+            }
         }
 
         #endregion

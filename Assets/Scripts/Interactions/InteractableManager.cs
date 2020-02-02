@@ -1,4 +1,5 @@
-﻿using Celeste.Storage;
+﻿using Celeste.Reactions;
+using Celeste.Storage;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,9 @@ namespace Celeste.Interactions
 
         [SerializeField]
         private InventoryManager inventoryManager;
+
+        [SerializeField]
+        private GameObject emojiPrefab;
 
         [SerializeField]
         private List<Interactable> initialInteractables = new List<Interactable>();
@@ -87,6 +91,17 @@ namespace Celeste.Interactions
                 GameObject.Destroy(interactableGameObjects[interactable]);
                 interactableGameObjects.Remove(interactable);
             }
+        }
+
+        public void AddReaction(Interactable interactable, Reaction reaction)
+        {
+            AddReaction(interactableGameObjects[interactable].transform, reaction);
+        }
+
+        public void AddReaction(Transform parent, Reaction reaction)
+        {
+            GameObject emoji = GameObject.Instantiate(emojiPrefab, parent);
+            emoji.GetComponent<SpriteRenderer>().sprite = reaction.Sprite;
         }
 
         #endregion

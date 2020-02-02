@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: GirlLookingForDog
   m_EditorClassIdentifier: 
   prefab: {fileID: 6809988549086619887, guid: a993a8231d7ae964a9e608042c70efc4, type: 3}
+  requirementsFailedReaction: {fileID: 11400000, guid: 3988f90c5327388409440ae59db42885,
+    type: 2}
   requirements:
   - {fileID: 11400000, guid: 0048064167627bc439dc8ab01937f2c0, type: 2}
   effects:
+  - {fileID: 11400000, guid: fcd70972b65f0d04f953cb606cbc1624, type: 2}
   - {fileID: 11400000, guid: 1df5889ac36674c4686e602bdef55650, type: 2}
   - {fileID: 11400000, guid: bdb70e55876c9464ab9829d52a6973c5, type: 2}
+  - {fileID: 11400000, guid: 607b9c4bd11adc5478fa0902c5964d74, type: 2}
   - {fileID: 11400000, guid: 261ce6b983282fb4ca1589e497cf2a8c, type: 2}

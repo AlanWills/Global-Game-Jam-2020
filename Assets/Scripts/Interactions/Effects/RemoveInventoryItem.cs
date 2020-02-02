@@ -1,4 +1,6 @@
 ﻿using Celeste.Collectables;
+using Celeste.Interactions;
+using Celeste.Interactions.Effects;
 using Celeste.Storage;
 using System;
 using System.Collections;
@@ -8,9 +10,9 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Celeste.Interactions.Effects
+namespace CelesteEngine.Interactions.Effects
 {
-    public class AddCollectable : Effect
+    public class RemoveInventoryItem : Effect
     {
         #region Serialized Fields
 
@@ -19,11 +21,11 @@ namespace Celeste.Interactions.Effects
 
         #endregion
 
-        #region Effect Implementation
+        #region Effect Implementation Methods
 
         public override IEnumerator Do(InteractableManager interactableManager, InventoryManager inventoryManager)
         {
-            inventoryManager.AddToInventory(collectable);
+            inventoryManager.RemoveInventoryItem(collectable);
 
             return null;
         }

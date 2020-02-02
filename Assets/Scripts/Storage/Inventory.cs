@@ -18,6 +18,11 @@ namespace Celeste.Storage
 
         #region Collectable Methods
 
+        public void Clear()
+        {
+            items.Clear();
+        }
+
         public void AddToInventory(Collectable collectable)
         {
             items.Add(collectable);
@@ -26,6 +31,11 @@ namespace Celeste.Storage
         public bool HasItem(Collectable collectable)
         {
             return items.Exists(x => x == collectable);
+        }
+
+        public void RemoveItem(Collectable collectable)
+        {
+            items.Remove(collectable);
         }
 
         #endregion

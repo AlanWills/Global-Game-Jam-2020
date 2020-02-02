@@ -1,4 +1,4 @@
-﻿using Celeste.Collectables;
+﻿using Celeste.Reactions;
 using Celeste.Storage;
 using System;
 using System.Collections;
@@ -10,24 +10,24 @@ using UnityEngine;
 
 namespace Celeste.Interactions.Effects
 {
-    public class AddCollectable : Effect
+    public class ShowInteractableReaction : Effect
     {
         #region Serialized Fields
 
         [SerializeField]
-        private Collectable collectable;
+        private Interactable interactable;
+
+        [SerializeField]
+        private Reaction reaction;
 
         #endregion
-
-        #region Effect Implementation
 
         public override IEnumerator Do(InteractableManager interactableManager, InventoryManager inventoryManager)
         {
-            inventoryManager.AddToInventory(collectable);
+            interactableManager.AddReaction(interactable, reaction);
 
-            return null;
+            // Emoji animation time + a bit
+            yield return new WaitForSeconds(1.5f);
         }
-
-        #endregion
     }
 }

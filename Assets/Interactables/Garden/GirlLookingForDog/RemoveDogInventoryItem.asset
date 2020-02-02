@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff25b510c1c95b74a8bee546019d43f8, type: 3}
-  m_Name: RemoveInteractable
+  m_Script: {fileID: 11500000, guid: ee111608e1146e047aa4aebae8ae7602, type: 3}
+  m_Name: RemoveDogInventoryItem
   m_EditorClassIdentifier: 
-  interactable: {fileID: 11400000, guid: 3ac419108c46a144fa6d8257215cb617, type: 2}
+  collectable: {fileID: 11400000, guid: 124d9550b9d81e84b8927ac8418e0fce, type: 2}

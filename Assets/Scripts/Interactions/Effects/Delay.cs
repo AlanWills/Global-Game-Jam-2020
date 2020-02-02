@@ -1,5 +1,4 @@
-﻿using Celeste.Collectables;
-using Celeste.Storage;
+﻿using Celeste.Storage;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,12 +9,12 @@ using UnityEngine;
 
 namespace Celeste.Interactions.Effects
 {
-    public class AddCollectable : Effect
+    public class Delay : Effect
     {
         #region Serialized Fields
 
         [SerializeField]
-        private Collectable collectable;
+        private float delay = 1;
 
         #endregion
 
@@ -23,9 +22,7 @@ namespace Celeste.Interactions.Effects
 
         public override IEnumerator Do(InteractableManager interactableManager, InventoryManager inventoryManager)
         {
-            inventoryManager.AddToInventory(collectable);
-
-            return null;
+            yield return new WaitForSeconds(delay);
         }
 
         #endregion

@@ -12200,8 +12200,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryManager: {fileID: 167992567}
+  emojiPrefab: {fileID: 7828602547701701593, guid: 33fce8a2cd2df1940bb3805efd2c7322,
+    type: 3}
   initialInteractables:
   - {fileID: 11400000, guid: 3ac419108c46a144fa6d8257215cb617, type: 2}
+  - {fileID: 11400000, guid: fd801893ebf890144a92cc6b884eff00, type: 2}
   worldRoot: {fileID: 1013918672}
 --- !u!1 &1130014830
 GameObject:
@@ -18280,7 +18283,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialCollectables:
   - {fileID: 11400000, guid: 745f8e09a015c0147888ed6b8826cbcf, type: 2}
-  - {fileID: 11400000, guid: 124d9550b9d81e84b8927ac8418e0fce, type: 2}
   - {fileID: 11400000, guid: c72a366b2d4318047868171a2b904055, type: 2}
   - {fileID: 11400000, guid: fa1735e00a7de9c4dadbe97549b8e780, type: 2}
   worldRoot: {fileID: 1013918672}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb62f17ab6dfd874db51cc91ffb94a45, type: 3}
+  m_Name: Dog
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 841766061984787359, guid: 3a78a527faec7cb4a9d1ed875ed104dd, type: 3}
+  requirements: []
+  effects:
+  - {fileID: 11400000, guid: 3d0129e8d31ce2d45b8b9ae5c81c21c7, type: 2}
+  - {fileID: 11400000, guid: 79126bd54f8379e4188447ef8b9b8314, type: 2}

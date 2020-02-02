@@ -11,6 +11,6 @@ namespace Celeste.Interactions.Effects
 {
     public abstract class Effect : ScriptableObject
     {
-        public abstract IEnumerable Do(InteractableManager interactableManager, InventoryManager inventoryManager);
+        public abstract IEnumerator Do(InteractableManager interactableManager, InventoryManager inventoryManager);
     }
 }

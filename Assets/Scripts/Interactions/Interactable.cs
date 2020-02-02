@@ -1,6 +1,7 @@
 ﻿using Celeste.Coroutines;
 using Celeste.Interactions.Effects;
 using Celeste.Interactions.Requirements;
+using Celeste.Reactions;
 using Celeste.Storage;
 using System;
 using System.Collections;
@@ -18,6 +19,9 @@ namespace Celeste.Interactions
 
         [SerializeField]
         private GameObject prefab;
+
+        [SerializeField]
+        private Reaction requirementsFailedReaction;
 
         [SerializeField]
         private List<Requirement> requirements = new List<Requirement>();
@@ -43,6 +47,10 @@ namespace Celeste.Interactions
             if (AreRequirementsMet(inventoryManager))
             {
                 CoroutineManager.PerformCoroutine(DoEffects(interactableManager, inventoryManager));
+            }
+            else if (requirementsFailedReaction != null)
+            {
+                interactableManager.AddReaction(this, requirementsFailedReaction);
             }
         }
 

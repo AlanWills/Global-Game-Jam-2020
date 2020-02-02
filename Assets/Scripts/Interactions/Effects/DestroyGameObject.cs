@@ -18,7 +18,7 @@ namespace Celeste.Interactions.Effects
 
         #endregion
 
-        public override IEnumerable Do(InteractableManager interactableManager, InventoryManager inventoryManager)
+        public override IEnumerator Do(InteractableManager interactableManager, InventoryManager inventoryManager)
         {
             GameObject.Destroy(GameObject.Find(gameObjectName));
 
