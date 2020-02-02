@@ -63,7 +63,10 @@ namespace Celeste.Interactions
 
         public void InteractWithInteractables(Interactor interactor)
         {
-            foreach (KeyValuePair<Interactable, GameObject> interactableGameObject in interactableGameObjects)
+            // Create a copy to allow interactables to remove themselves from effects
+            Dictionary<Interactable, GameObject> interactables = new Dictionary<Interactable, GameObject>(interactableGameObjects);
+
+            foreach (KeyValuePair<Interactable, GameObject> interactableGameObject in interactables)
             {
                 if (CanInteract(interactableGameObject.Value, interactor))
                 {
